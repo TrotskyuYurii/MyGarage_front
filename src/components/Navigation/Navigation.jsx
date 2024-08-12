@@ -5,8 +5,8 @@ function Navigation() {
   return (
     <nav className={css.navigation}>
       <NavLink to="/" className={css.navLink}>Home</NavLink>
-      <NavLink to="/about" className={css.navLink}>About</NavLink>
-      <NavLink to="/products" className={css.navLink}>Products</NavLink>
+      <NavLink to="/SignUp" className={css.navLink}>SignUp</NavLink>
+      <NavLink to="/login" className={css.navLink}>login</NavLink>
     </nav>
   );
 }

@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import Navigation from "./components/Navigation/Navigation";
+import SignUp from "./components/SignUp/SignUp";
 import Login from "./components/login/Login";
 import WelcomePage from "./components/welcomePage/WelcomePage";
 import NotFoundPage from "./components/notFoundPage/NotFoundPage";
@@ -15,6 +16,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<WelcomePage />} />
+        <Route path="/SignUp" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
