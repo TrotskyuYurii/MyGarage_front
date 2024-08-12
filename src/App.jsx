@@ -6,7 +6,7 @@ import Navigation from "./components/Navigation/Navigation";
 import SignUp from "./components/SignUp/SignUp";
 import LoginPage from "./components/login/Login";
 import WelcomePage from "./components/WelcomePage/WelcomePage";
-import NotFoundPage from "./components/notFoundPage/NotFoundPage";
+import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 import css from "./App.module.css";
 
 function App() {
