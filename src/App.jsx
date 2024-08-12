@@ -5,7 +5,7 @@ import { AnimatedBackground } from 'animated-backgrounds';
 import Navigation from "./components/Navigation/Navigation";
 import SignUp from "./components/SignUp/SignUp";
 import LoginPage from "./components/login/Login";
-import WelcomePage from "./components/welcomePage/WelcomePage";
+import WelcomePage from "./components/WelcomePage/WelcomePage";
 import NotFoundPage from "./components/notFoundPage/NotFoundPage";
 import css from "./App.module.css";
 
