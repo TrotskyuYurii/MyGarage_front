@@ -1,8 +1,10 @@
-
+import css from "./welcomePage.module.css"
 
 const WelcomePage = () => {
   return (
-    <div>WelcomePage</div>
+    <div className={css.wrapper}>
+      <p>WelcomePage to my garage</p>
+    </div>
   )
 }
 

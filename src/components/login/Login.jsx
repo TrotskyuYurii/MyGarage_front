@@ -1,9 +1,14 @@
+
+
 import css from './login.module.css'
 
-const Login = () => {
+const LoginPage = () => {
   return (
-    <div>Login page</div>
-  )
+    <div className={css.wrapper}>
+      <h1>Login</h1>
+      <p>Enter your credentials</p>
+    </div>
+  );
 }
 
-export default Login
+export default LoginPage

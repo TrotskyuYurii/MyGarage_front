@@ -1,8 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 
+import { AnimatedBackground } from 'animated-backgrounds';
+
 import Navigation from "./components/Navigation/Navigation";
 import SignUp from "./components/SignUp/SignUp";
-import Login from "./components/login/Login";
+import LoginPage from "./components/login/Login";
 import WelcomePage from "./components/welcomePage/WelcomePage";
 import NotFoundPage from "./components/notFoundPage/NotFoundPage";
 import css from "./App.module.css";
@@ -10,6 +12,7 @@ import css from "./App.module.css";
 function App() {
   return (
     <div className={css.wrapper}>
+      <AnimatedBackground animationName="starryNight" />
        <header className={css.header}>
         <Navigation />
       </header>
@@ -17,7 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<WelcomePage />} />
         <Route path="/SignUp" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>
