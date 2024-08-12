@@ -2,7 +2,7 @@ import css from './login.module.css'
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <div>Login page</div>
   )
 }
 
