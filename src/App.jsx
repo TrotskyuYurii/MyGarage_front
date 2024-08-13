@@ -12,7 +12,7 @@ import css from "./App.module.css";
 function App() {
   return (
     <div className={css.wrapper}>
-      <AnimatedBackground animationName="starryNight" />
+      <AnimatedBackground animationName="cosmicDust" />
       
        <header className={css.header}>
         <Navigation />
