@@ -13,6 +13,7 @@ function App() {
   return (
     <div className={css.wrapper}>
       <AnimatedBackground animationName="starryNight" />
+      
        <header className={css.header}>
         <Navigation />
       </header>

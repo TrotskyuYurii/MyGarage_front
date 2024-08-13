@@ -10,14 +10,15 @@
   margin: 0 1rem;
   text-decoration: none;
   color: #333;
+  transition: color 0.6s ease;
+  font-weight: 600;
 }
 
 .navLink:hover {
-  text-decoration: underline;
+  color: #007bff;
 }
 
-
-.navLink.active {
-  font-weight: bold;
-  color: #007bff; 
+.active {
+  color: #006ce0;
 }
+
