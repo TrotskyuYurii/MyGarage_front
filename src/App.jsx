@@ -18,6 +18,7 @@ function App() {
         <Navigation />
       </header>
 
+
       <Routes>
         <Route path="/" element={<WelcomePage />} />
         <Route path="/SignUp" element={<SignUp />} />
