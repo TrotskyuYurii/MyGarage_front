@@ -3,8 +3,9 @@ import { Routes, Route } from "react-router-dom";
 import { AnimatedBackground } from 'animated-backgrounds';
 
 import Navigation from "./components/Navigation/Navigation";
-import SignUp from "./components/SignUp/SignUp";
+import Register from "./components/Register/Register";
 import LoginPage from "./components/login/Login";
+import LogoutPage from "./components/logout/Logout";
 import WelcomePage from "./components/WelcomePage/WelcomePage";
 import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 import css from "./App.module.css";
@@ -21,8 +22,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<WelcomePage />} />
-        <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/logout" element={<LogoutPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>

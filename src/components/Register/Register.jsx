@@ -1,9 +1,9 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 
-import css from "./SignUp.module.css";
+import css from "./Register.module.css";
 
-const SignUp = () => {
+const Register = () => {
   //Значення за замовчуванням
   const FORM_INITIAL_VALUES = {
     name: "",
@@ -70,4 +70,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Register;
