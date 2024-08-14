@@ -7,6 +7,7 @@ import Register from "./components/Register/Register";
 import LoginPage from "./components/login/Login";
 import LogoutPage from "./components/logout/Logout";
 import WelcomePage from "./components/WelcomePage/WelcomePage";
+import Home from "./components/Home/Home.jsx";
 import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 import css from "./App.module.css";
 
@@ -22,6 +23,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<WelcomePage />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/logout" element={<LogoutPage />} />

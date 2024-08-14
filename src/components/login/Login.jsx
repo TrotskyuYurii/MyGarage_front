@@ -13,7 +13,7 @@ const LoginPage = () => {
 
   const loginUser = () => {
     dispatch(logIn( ));
-    navigate("/");
+    navigate("/home");
   };
 
 

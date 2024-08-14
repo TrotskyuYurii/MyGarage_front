@@ -9,7 +9,8 @@ function Navigation() {
 
   return (
     <nav className={css.navigation}>
-      <NavLink to="/" className={({ isActive }) => classNames(css.navLink, { [css.active]: isActive })}>Home</NavLink>
+      <NavLink to="/" className={({ isActive }) => classNames(css.navLink, { [css.active]: isActive })}>About</NavLink>
+      <NavLink to="/home" className={({ isActive }) => classNames(css.navLink, { [css.active]: isActive })}>Home</NavLink>
       <NavLink to="/register" className={({ isActive }) => classNames(css.navLink, { [css.active]: isActive })}>Register</NavLink>
       {!isLogged && <NavLink to="/login" className={({ isActive }) => classNames(css.navLink, { [css.active]: isActive })}>LogIn</NavLink>}
       {isLogged && <NavLink to="/logout" className={({ isActive }) => classNames(css.navLink, { [css.active]: isActive })}>LogOut</NavLink>}
