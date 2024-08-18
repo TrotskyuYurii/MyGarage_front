@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import mainSlice from "../slice/mainSlice.jsx"; // Шлях правильний, але потрібно змінити використання
+import mainSlice from "../slice/mainSlice.jsx"; 
 
 const rootReducer = combineReducers({
-  mainSlice, // Використовуйте правильний ключ, замість `mainSlice`
+  mainSlice, 
 });
 
 export default rootReducer;

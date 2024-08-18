@@ -1,7 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+
+
 const initialState = {
   isLogged: false,
+  pingpong: "",
 };
 
 const mainSlice = createSlice({
@@ -9,14 +12,18 @@ const mainSlice = createSlice({
   initialState,
   reducers: {
     logIn: (state) => {
-      state.isLogged = true; // Встановлюємо прапорець isLogged в true
+      state.isLogged = true; 
     },
     logOut: (state) => {
-      state.isLogged = false; // Встановлюємо прапорець isLogged в false
+      state.isLogged = false; 
     },
+    pingpongtest: (state) => {
+      state.pingpong = "";
+    },
+    
   },
 });
 
-export const { logIn, logOut } = mainSlice.actions;
+export const { logIn, logOut, pingpongtest } = mainSlice.actions;
 
 export default mainSlice.reducer;

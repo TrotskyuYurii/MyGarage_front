@@ -1,10 +1,14 @@
+import { useDispatch } from "react-redux"; 
+import {pingpongtest} from "../../redux/utilites/operation"
 import css from "./home.module.css"
 
 
 const Home = () => {
 
+  const dispatch = useDispatch(); 
+  
   const PingPong = () => {
-    console.log("PingPong")
+    dispatch(pingpongtest());    
   }
 
 
