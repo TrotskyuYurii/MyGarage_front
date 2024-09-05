@@ -1,9 +1,13 @@
+import { useDispatch } from "react-redux"; 
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
-
+import { postregister } from "../../redux/utilites/operation";
 import css from "./Register.module.css";
 
 const Register = () => {
+
+  const dispatch = useDispatch();
+
   //Значення за замовчуванням
   const FORM_INITIAL_VALUES = {
     name: "",
@@ -25,8 +29,8 @@ const Register = () => {
   });
 
   const registerUser = (values) => {
-    // dispatch(register(values));
-    console.log(values);
+    dispatch(postregister(values));
+    // console.log(values);
   };
 
   return (
