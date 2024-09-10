@@ -24,9 +24,13 @@ export const pingpongtest = createAsyncThunk(
 
 export const postregister = createAsyncThunk(
   "auth/register",
-  async (_, thunkAPI) => {
+  async ({ name, email, password }, thunkAPI) => {
     try {
-      const response = await axiosInstance.post("auth/register");
+      const response = await axiosInstance.post("auth/register", {
+        name,
+        email,
+        password,
+      });
       console.log(response.data);
       return response.data;
     } catch (error) {
